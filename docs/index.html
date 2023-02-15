@@ -1,0 +1,674 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>phpWallet Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#welcome-to-phpwallet-documentation" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="phpWallet Docs" aria-label="phpWallet Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              phpWallet Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Installation
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="phpWallet Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    phpWallet Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Installation
+      </label>
+    
+    <a href="." title="Installation" class="md-nav__link md-nav__link--active">
+      Installation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-requirements" class="md-nav__link">
+    Server requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-files-create-a-database-and-an-email-with-cpanel" class="md-nav__link">
+    Upload files, create a database and an email with cpanel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-enviroment-variables" class="md-nav__link">
+    Setting enviroment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-paypal" class="md-nav__link">
+    Configuring PayPal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-paypal-api-keys" class="md-nav__link">
+    Add PayPal API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-paypal-gateway" class="md-nav__link">
+    Activate PayPal Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-paystack" class="md-nav__link">
+    Configuring Paystack
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-paystack-api-keys" class="md-nav__link">
+    Add Paystack API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-paystack-gateway" class="md-nav__link">
+    Activate Paystack Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-stripe" class="md-nav__link">
+    Configuring Stripe
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-stripe-api-keys" class="md-nav__link">
+    Add Stripe API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-stripe-gateway" class="md-nav__link">
+    Activate Stripe Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-storage" class="md-nav__link">
+    The file storage
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="currency/" title="Currencies" class="md-nav__link">
+      Currencies
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="d_m/" title="Deposit Methods" class="md-nav__link">
+      Deposit Methods
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="w_m/" title="Withdrawal Methods" class="md-nav__link">
+      Withdrawal Methods
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="e_r.mdr" title="Currency Exchange Rates" class="md-nav__link">
+      Currency Exchange Rates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-requirements" class="md-nav__link">
+    Server requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-files-create-a-database-and-an-email-with-cpanel" class="md-nav__link">
+    Upload files, create a database and an email with cpanel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-enviroment-variables" class="md-nav__link">
+    Setting enviroment variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-paypal" class="md-nav__link">
+    Configuring PayPal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-paypal-api-keys" class="md-nav__link">
+    Add PayPal API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-paypal-gateway" class="md-nav__link">
+    Activate PayPal Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-paystack" class="md-nav__link">
+    Configuring Paystack
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-paystack-api-keys" class="md-nav__link">
+    Add Paystack API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-paystack-gateway" class="md-nav__link">
+    Activate Paystack Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-stripe" class="md-nav__link">
+    Configuring Stripe
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-stripe-api-keys" class="md-nav__link">
+    Add Stripe API keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-stripe-gateway" class="md-nav__link">
+    Activate Stripe Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-file-storage" class="md-nav__link">
+    The file storage
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="welcome-to-phpwallet-documentation">Welcome to phpWallet documentation</h1>
+<p>The first step in the installation process is to make sure that your server has all the prerequisites necessary to host phpWallet. Most server with Cpanel already have all the prerequisites included.</p>
+<h2 id="server-requirements"><strong>Server requirements</strong></h2>
+<ul>
+<li>PHP &gt;= 7.3.*</li>
+<li>PDO PHP Extension</li>
+<li>Tokenizer PHP Extension</li>
+<li>PHP Fileinfo extension</li>
+<li>OpenSSL PHP Extension</li>
+<li>XML PHP Extension</li>
+<li>Mbstring PHP Extension</li>
+<li>GD Library</li>
+<li>CURL Library</li>
+<li>PHP mod_rewrite enabled</li>
+<li>A server that supports Symlinks</li>
+</ul>
+<h2 id="upload-files-create-a-database-and-an-email-with-cpanel"><strong>Upload files, create a database and an email with cpanel</strong></h2>
+<ul>
+<li>Upload The phpWallet zip file to your server's <code>public_html/</code> folder.</li>
+<li>Create a database and write-down the database name, user , and password for <a href="#step-2">step 2</a></li>
+<li>Import the .sql to your recently created databse. Use your cpanel  phpMyadmin</li>
+<li>Create an email account and write-down the email's <code>smtp</code> info for <a href="#step-2">step 2</a></li>
+</ul>
+<h2 id="setting-enviroment-variables"><strong>Setting enviroment variables</strong></h2>
+<ul>
+<li>In your server go to <code>.. /public_html/application/.env</code> and edit the .env file</li>
+</ul>
+<p><a href="img/dotenv.png"><img alt="image00" src="img/dotenv.png" /></a></p>
+<h2 id="configuring-paypal"><strong>Configuring PayPal</strong></h2>
+<h3 id="add-paypal-api-keys">Add PayPal API keys</h3>
+<ul>
+<li>go to <code>.. /public_html/application/config/paypal.php</code> and edit the paypal.php file</li>
+</ul>
+<p><a href="img/paypal_config.png"><img alt="image02" src="img/paypal_config.png" /></a></p>
+<h3 id="activate-paypal-gateway">Activate PayPal Gateway</h3>
+<ul>
+<li>go to <code>www.yourwebsite.com/admin</code> and login with an admin account, then activate the PayPal gateway in settings menu</li>
+</ul>
+<p><a href="img/paypal_gateway_setting.png"><img alt="image03" src="img/paypal_gateway_setting.png" /></a></p>
+<h2 id="configuring-paystack"><strong>Configuring Paystack</strong></h2>
+<h3 id="add-paystack-api-keys">Add Paystack API keys</h3>
+<ul>
+<li>go to <code>.. /public_html/application/http/controllers/PaystackController.php</code> and edit the PaystackController.php file</li>
+</ul>
+<p><a href="img/paystack_config.png"><img alt="image04" src="img/paystack_config.png" /></a></p>
+<ul>
+<li>in PayStack developer dashboard go to <code>Test Callback URL</code> replace <code>http:\\domain.com</code> with your domain name</li>
+</ul>
+<p><a href="img/paystack_config_developer.png"><img alt="image000" src="img/paystack_config_developer.png" /></a></p>
+<h3 id="activate-paystack-gateway">Activate Paystack Gateway</h3>
+<ul>
+<li>Activate the Paystack gateway in settings menu. ( process described <a href="#step-2_1">here</a>  )</li>
+</ul>
+<h2 id="configuring-stripe"><strong>Configuring Stripe</strong></h2>
+<h3 id="add-stripe-api-keys">Add Stripe API keys</h3>
+<ul>
+<li>Set <code>STRIPE_PUBLISHABLE_KEY</code> and <code>STRIPE_SECRET_KEY</code>  ( line 26 and 27 ) in the .env file described in <a href="#step-2">step 2</a> </li>
+</ul>
+<h3 id="activate-stripe-gateway">Activate Stripe Gateway</h3>
+<ul>
+<li>Activate the Stripe gateway in settings menu. ( process described <a href="#step-2_1">here</a>  )</li>
+</ul>
+<h2 id="the-file-storage"><strong>The file storage</strong></h2>
+<ul>
+<li>Copy the symbolic link folder <code>storage</code> from <code>.. /public_html/application/public/</code>  to <code>.. /public_html/</code></li>
+</ul>
+<p><a href="img/storage_link.png"><img alt="image01" src="img/storage_link.png" /></a></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="currency/" title="Currencies" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Currencies
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
